@@ -1,0 +1,90 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #B8860b, #000); /* Existing background gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+/* Login container styling */
+.login-container {
+    background: white; /* White background for contrast */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 320px; /* Fixed width for the container */
+    text-align: center; /* Center align text and form elements */
+}
+
+/* Heading styling */
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+input {
+    width: 90%; /* Makes inputs responsive to container */
+    max-width: 280px; /* Ensures inputs don't exceed a maximum size */
+    padding: 10px; /* Padding for usability */
+    margin: 10px auto; /* Add spacing and center inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners for inputs */
+    display: block; /* Block display for consistent spacing */
+}
+
+/* Button styling */
+button {
+    background: #B8860b; /* Gold-like color */
+    color: white; /* Text color for contrast */
+    border: none; /* Remove border */
+    padding: 10px; /* Padding for a larger clickable area */
+    width: 100%; /* Full width of the container */
+    cursor: pointer; /* Pointer cursor for hover state */
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: 0.3s; /* Smooth hover transition */
+}
+
+button:hover {
+    background: #644906; /* Darker shade on hover */
+    transition: 0.3s; /* Smooth hover effect */
+}
+
+/* Paragraph and link styling */
+p {
+    font-size: 14px; /* Consistent font size */
+    margin-top: 15px; /* Spacing above the paragraph */
+}
+
+a {
+    color: #B8860b; /* Gold-like color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for accessibility */
+}
+
+/* Mobile responsiveness for smaller screens */
+@media screen and (max-width: 320px) {
+    .login-container {
+        width: 90%; /* Adjust the container to fit smaller screens */
+        padding: 15px; /* Reduce padding for better space usage */
+    }
+
+    input {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 8px; /* Slightly reduce padding */
+    }
+
+    button {
+        font-size: 14px; /* Adjust button text size */
+        padding: 8px; /* Slightly reduce padding */
+    }
+
+    p, a {
+        font-size: 12px; /* Reduce font size for smaller screens */
+    }
+}
